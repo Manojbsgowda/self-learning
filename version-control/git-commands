@@ -1,0 +1,30 @@
+
+what is VCS -version control system
+
+used for code sharing and work in collaburation
+
+eg: git,svn,bitbucket, etc..
+
+git is a distributed system means we can work independently we have our own copy of the files
+
+svn - uses centralized repository to story the files and folders
+
+git commands :
+
+git init - used to initalize the git so that it starts  tracks the files and folders from here
+
+git status  - used to see what you did
+
+git log   - it shows the history of the operation you did
+
+git add  - is used to add the files to staging area
+
+git add . - it adds all the files into staging area
+
+git merge  - used to merge one branch to another
+
+git diff - it shows the difference in the files
+
+git commit - used to add the files to 
+
+git reset 
