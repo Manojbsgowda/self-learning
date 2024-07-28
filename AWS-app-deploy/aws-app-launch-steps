@@ -1,0 +1,45 @@
+# steps to deploy an applicatio to aws EC2 machine
+
+step 1:
+
+first we have create the IAM user to provide only perticular access to a user 
+IAM steps:
+
+go to aws console login as a root user 
+
+then search for IAM click on Users
+
+click on create user
+
+give username click on checkbox Provide user access to the AWS Management Console - optional
+
+click on i want to create an IAM user-> custom password
+
+next -> attach policies directly->next -> create user and copy the console-login URL and login with google
+
+this will create the IAM user to login to the aws console as a IAM user
+
+
+step 2: create EC2 instance 
+
+    login as a IAM user and create EC2 instance -> take os,select CPUs
+
+   then keypair then launch instance
+
+
+step 3 :
+
+open shell and connect to ec2 server key keypair 
+ssh -i keypair  @ubuntu172.0.0.0
+
+it connects to EC2 server
+then sudo apt update    -> to update dependencies packages etc..
+there you install git if not
+
+# below steps to run nodejs based applications
+then install npm 
+then install nodejs
+then clone the git repository
+setup the env file
+then npm install
+npm run start 
