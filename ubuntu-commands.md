@@ -1,3 +1,6 @@
+
+# Basic Linux Shell Commands
+
 # login as root user
 command : `sudo su   or sudo -i`   `cd /root`
 
@@ -16,7 +19,6 @@ command : `dpkg --list`
 command : `apt list --installed`
 
 
-# Basic Linux Shell Commands
 
 # List files and directories in the current directory
 `ls`
@@ -32,6 +34,12 @@ command : `apt list --installed`
 
 # Go up one directory level
 `cd ..`
+
+# Compress a file using gzip
+`gzip file_name`
+
+# Decompress a gzip file
+`gunzip file_name.gz`
 
 # Display the current working directory
 `pwd`
@@ -156,6 +164,65 @@ command : `apt list --installed`
 # Exit the shell or terminal session
 `exit`
 
+# Extract a tar archive
+`tar -xvf archive_name.tar`
+
+# Create a compressed tar archive
+`tar -czvf archive_name.tar.gz /path/to/directory`
+
+# Extract a compressed tar archive
+`tar -xzvf archive_name.tar.gz`
+
+# List logged-in users
+`who`
+
+# Add a user to a group
+`sudo usermod -aG group_name username`
+
+# Change user password
+`passwd username`
+
+# View all groups
+`cat /etc/group`
+
+# Display environment variables
+`printenv`
+
+# Export an environment variable
+`export VAR_NAME=value`
+
+# View the command history
+`history`
+
+# Repeat the last command
+`!!`
+
+# Kill a process by PID
+`kill PID`
+
+# Kill a process by name
+`pkill process_name`
+
+# Kill all processes with a specific name
+`killall process_name`
+
+# Display active TCP/UDP connections
+`sudo netstat -tunlp`
+
+# Test HTTP connection to a website
+`curl -I http://www.example.com`
+
+# Download a file from the web using curl
+`curl -O http://www.example.com/file.zip`
+
+# Mirror a website using wget
+`wget -m http://www.example.com`
+
+# Install a package from a .deb file
+`sudo dpkg -i package.deb`
+
+# Repair broken package dependencies
+`sudo apt --fix-broken install`
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # to uninstall application from ubuntu
 command : `sudo apt remove application-name`
