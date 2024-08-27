@@ -2,7 +2,7 @@
 command : sudo su   or sudo -i   cd /root
 
 # navigate to the root directory
-command : cd /root
+command : `cd /root`
 
 # listing installed application and packages
 command : ls /usr/bin
