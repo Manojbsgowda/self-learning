@@ -7,7 +7,7 @@ command : `cd /root`
 # listing installed application and packages
 command : `ls /usr/bin`
 command : `ls /usr/local/bin`
-command : `ls /opt`
+command : `ls /opt` 
 
 # listing all installed packages
 # installed using dpkg
