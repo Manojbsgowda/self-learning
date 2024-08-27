@@ -1,19 +1,19 @@
 # commands
 
 ls -        list the files
-ls - la     list files with detail information
+ls - la     list files with detailed information
 ls - ltr    list the files and folders with all the details
 
 mkdir       make directory
-cat         to dispaly the content of the file
-vim or vi   used to create the file
+cat         to display the content of the file
+vim or vi   editor used to create the file
 
 
-ps -ef      used print the running  process details
+ps -ef      used to print the running  process details
 
-nproc       used to dispaly  cpu details
+nproc       used to display  cpu details
 
-df -h       it display the ram memory details
+df -h       it displays the RAM memory details
 
 free -g     used to display the free and used memory details
 
