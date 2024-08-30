@@ -239,4 +239,20 @@ command : `sudo snap remove application-name`
 #  to uninstall  if you install it using .deb file
 command : `sudo dpkg --remove application-name`
 
-# 
+Terminate processes:
+kill pid 12345
+
+# forcefully kill
+kill -9 12345
+
+# gracefully stop the process
+kill -15 12345
+
+# systemctl: Manage system services. The systemctl command is used to control systemd services. It allows you to start, stop, enable, and disable services.
+
+Start a service: sudo systemctl start servicename
+Stop a service: sudo systemctl stop servicename
+Restart a service: sudo systemctl restart servicename
+Enable a service to start at boot: sudo systemctl enable servicename
+Disable a service from starting at boot: sudo systemctl disable servicename
+Check the status of a service: sudo systemctl status servicename
