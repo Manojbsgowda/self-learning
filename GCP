@@ -1,1 +1,21 @@
+#starts with basics
+1. Intro to google cloud platform - learn about GCP infrastructure ,services and resources.
+                                    understand cloud computing models (Iaas,PaaS,SaaS)
 
+2. Learn about GCP core Services - 
+      1. compute services - compute engine , app engine , kubernetes engine(GKE)
+
+      2. storage services - cloud storage, cloud SQL , BigQuery
+
+      3. Networking  : learn about VPC ,subnets,firewalls ,load balancing and peering
+
+      4. Identity and Security : IAM(managing permissions,roles,security best practices)
+
+      5. Monitoring and logging : stackdriver Monitoring and logging 
+
+
+Labs :
+setting up VM isntances on compute engine
+deploying an application using app engine
+configuring a kubernetes cluster with GKE
+creating and managing database with cloud SQL
