@@ -3,15 +3,16 @@
                                     understand cloud computing models (Iaas,PaaS,SaaS)
 
 2. Learn about GCP core Services - 
-      1. compute services - compute engine , app engine , kubernetes engine(GKE)
+      1. compute services - compute engine , app engine , cloud run,clud functions, kubernetes engine(GKE)
+             Familiarity with GCP Console, command-line tools (gcloud), and pricing model.
 
-      2. storage services - cloud storage, cloud SQL , BigQuery
+      2. storage services & database - cloud storage, cloud SQL , BigQuery Firestore, Spanner.
 
-      3. Networking  : learn about VPC ,subnets,firewalls ,load balancing and peering
+      3. Networking  : learn about VPC ,subnets,CDN,firewalls ,load balancing and peering
 
-      4. Identity and Security : IAM(managing permissions,roles,security best practices)
+      4. Identity and Security : IAM(managing permissions,roles,security best practices) ,Cloud KMS, Security Command Center.
 
-      5. Monitoring and logging : stackdriver Monitoring and logging 
+      5. Monitoring and logging : cloud monitoring, cloud operations suite,cloud trace,cloud debugger,cloud profile,cloud logging stackdriver Monitoring and logging 
 
 
 Labs :
