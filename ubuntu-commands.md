@@ -56,6 +56,9 @@ command : `apt list --installed`
 # Remove a directory and its contents recursively
 `rm -r directory_name`
 
+# remove a directory and all its contents including subdirectories if it contains write-protected then use
+`rm -rf directory-name`
+
 # Copy a file or directory
 `cp source destination`
 
