@@ -1,0 +1,23 @@
+aws s3 ls - to list s3 buckets
+
+# to list all running ec2 instances
+
+aws ec2 describe-instances  --filters "Name=instance-state-name,Values=running"      
+
+# to list all running rds 
+aws rds describe-db-instances
+
+# list all lambda functions
+aws lambda list-functions
+
+# list all elb 
+ aws elb describe-load-balancers
+
+# list all volumes 
+aws ec2 describe-volumes --filters "Name=status,Values=in-use"
+
+# list all clusters in use
+ aws ecs list-clusters aws evs list-services --cluster 
+
+# list all elastic IP in use
+ aws ec2 describe-addresses
