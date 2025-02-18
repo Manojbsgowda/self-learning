@@ -1,0 +1,15 @@
+kubectl start
+kubectl stop
+kubectl get pods
+kubectl status
+kubectl get nodes
+kubectl delete all -all
+kubectl get svc
+kubectl apply -f deployment.yml
+minikube ip
+kubectl log (pod id)
+minikube tunnel
+kubectl rollback restart deployment/test-app
+
+docker build -t manojbs743/test-app:latest .
+docker push manojbs743/test-app:latest
