@@ -1,0 +1,41 @@
+🔹 What is JIRA?
+JIRA is a project management tool used for tracking tasks, issues, and Agile development. It helps teams collaborate, plan, and execute projects efficiently.
+
+🔹 Key Concepts to Learn
+1️⃣ Basics of JIRA
+Understanding JIRA Software vs. JIRA Service Management vs. JIRA Work Management
+JIRA Dashboard – Homepage where you see your tasks, projects, and updates.
+JIRA Issues – Everything in JIRA (tasks, bugs, stories, etc.) is called an Issue.
+2️⃣ JIRA Project Structure
+Projects – A container for your tasks, bugs, or epics.
+Issues – Each task, bug, or story is an Issue.
+Issue Types
+Story – A feature or requirement.
+Task – A work item to complete.
+Bug – A defect or issue that needs fixing.
+Epic – A large work item that includes multiple stories/tasks.
+3️⃣ Working with Issues
+Creating Issues – How to create tasks, bugs, or stories.
+Assigning Issues – Assign issues to team members.
+Adding Comments & Attachments – Collaborate on issues.
+Tracking Issue Status – Open, In Progress, Done, etc.
+4️⃣ JIRA Agile Boards (Scrum & Kanban)
+Scrum Board – Used for Sprint-based projects.
+Kanban Board – Used for continuous work management.
+Sprints & Backlog
+Adding tasks to a sprint.
+Moving tasks across To Do → In Progress → Done.
+5️⃣ JIRA Workflows
+Statuses – Track progress (To Do, In Progress, Done).
+Transitions – Movement of issues between statuses.
+6️⃣ JIRA Reports & Dashboards
+Burndown Chart – Shows progress in a Sprint.
+Velocity Chart – Measures completed work.
+Sprint Reports – Helps track team performance.
+7️⃣ JIRA Permissions & Roles
+Admins – Manage users and settings.
+Developers – Work on assigned tasks.
+Testers – Verify and report issues.
+8️⃣ Integrations & Automation
+JIRA + GitLab, GitHub, Bitbucket – Link commits and branches.
+Automation Rules – Auto-assign issues, send notifications, etc.
