@@ -1,7 +1,8 @@
 name: Build and Push to AWS ECR
 
 on:
-#  push:           // if you want to enable uncommit this 
+#  push:         
+workflow_dispatch:
     branches:
       - main  # Change if needed
 
