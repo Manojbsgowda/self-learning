@@ -1,7 +1,7 @@
 name: Build and Push to AWS ECR
 
 on:
-  push:
+#  push:           // if you want to enable uncommit this 
     branches:
       - main  # Change if needed
 
