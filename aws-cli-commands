@@ -1,3 +1,117 @@
+# AWS CLI Commands Reference
+
+# 1️⃣ AWS Authentication & Setup
+aws configure  # Set up AWS CLI with Access Key, Secret Key, Region  
+aws sts get-caller-identity  # Verify AWS identity  
+
+# 2️⃣ EC2 (Elastic Compute Cloud)
+aws ec2 describe-instances  # List EC2 instances  
+aws ec2 start-instances --instance-ids i-1234567890abcdef0  # Start an instance  
+aws ec2 stop-instances --instance-ids i-1234567890abcdef0  # Stop an instance  
+aws ec2 terminate-instances --instance-ids i-1234567890abcdef0  # Terminate an instance  
+
+# 3️⃣ S3 (Simple Storage Service)
+aws s3 ls  # List all S3 buckets  
+aws s3 mb s3://my-bucket  # Create an S3 bucket  
+aws s3 cp file.txt s3://my-bucket/  # Upload a file to S3  
+aws s3 rm s3://my-bucket/file.txt  # Delete a file from S3  
+
+# 4️⃣ IAM (Identity & Access Management)
+aws iam list-users  # List all IAM users  
+aws iam create-user --user-name my-user  # Create a new IAM user  
+aws iam attach-user-policy --user-name my-user --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess  # Attach a policy  
+
+# 5️⃣ RDS (Relational Database Service)
+aws rds describe-db-instances  # List RDS instances  
+aws rds start-db-instance --db-instance-identifier mydb  # Start RDS instance  
+aws rds stop-db-instance --db-instance-identifier mydb  # Stop RDS instance  
+
+# 6️⃣ ECS (Elastic Container Service)
+aws ecs list-clusters  # List ECS clusters  
+aws ecs list-services --cluster my-cluster  # List services in a cluster  
+aws ecs list-tasks --cluster my-cluster  # List running tasks  
+aws ecs stop-task --task task-id  # Stop a running task  
+
+# 7️⃣ CloudWatch (Monitoring & Logs)
+aws cloudwatch describe-alarms  # List CloudWatch alarms  
+aws logs describe-log-groups  # List log groups  
+aws logs get-log-events --log-group-name my-log-group --log-stream-name my-stream  # Fetch log events
+
+
+# AWS ECS Commands
+
+# List ECS clusters
+aws ecs list-clusters
+
+# Describe an ECS cluster
+aws ecs describe-clusters --clusters <cluster-name>
+
+# List ECS services in a cluster
+aws ecs list-services --cluster <cluster-name>
+
+# Describe an ECS service
+aws ecs describe-services --cluster <cluster-name> --services <service-name>
+
+# List ECS tasks in a cluster
+aws ecs list-tasks --cluster <cluster-name>
+
+# Describe an ECS task
+aws ecs describe-tasks --cluster <cluster-name> --tasks <task-id>
+
+# Register a new ECS task definition
+aws ecs register-task-definition --cli-input-json file://task-def.json
+
+# Update an ECS service to use the latest task definition
+aws ecs update-service --cluster <cluster-name> --service <service-name> --task-definition <task-def-name>
+
+# Delete an ECS cluster
+aws ecs delete-cluster --cluster <cluster-name>
+
+
+# AWS EKS Commands
+
+# List all EKS clusters
+aws eks list-clusters
+
+# Describe an EKS cluster
+aws eks describe-cluster --name <cluster-name>
+
+# Get kubeconfig for an EKS cluster
+aws eks update-kubeconfig --name <cluster-name> --region <region>
+
+# List EKS node groups
+aws eks list-nodegroups --cluster-name <cluster-name>
+
+# Describe an EKS node group
+aws eks describe-nodegroup --cluster-name <cluster-name> --nodegroup-name <nodegroup-name>
+
+# Delete an EKS cluster
+aws eks delete-cluster --name <cluster-name>
+
+
+# AWS RDS Commands
+
+# List all RDS instances
+aws rds describe-db-instances
+
+# Describe a specific RDS instance
+aws rds describe-db-instances --db-instance-identifier <db-instance-name>
+
+# List RDS snapshots
+aws rds describe-db-snapshots
+
+# Create a new RDS snapshot
+aws rds create-db-snapshot --db-instance-identifier <db-instance-name> --db-snapshot-identifier <snapshot-name>
+
+# Restore an RDS instance from a snapshot
+aws rds restore-db-instance-from-db-snapshot --db-instance-identifier <new-instance-name> --db-snapshot-identifier <snapshot-name>
+
+# Delete an RDS instance
+aws rds delete-db-instance --db-instance-identifier <db-instance-name> --skip-final-snapshot
+
+
+
+
 aws s3 ls - to list s3 buckets
 
 # to list all running ec2 instances
